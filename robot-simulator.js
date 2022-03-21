@@ -17,8 +17,8 @@ module.exports = class Robot {
         let strArray = string.split(" ");
         this.x = parseInt(strArray[0]),
         this.y = parseInt(strArray[1]),
-        this.bearing = strArray[2],
-        this.command = strArray[3];
+        this.bearing = strArray[2].toUpperCase(),
+        this.command = strArray[3].toUpperCase();
         for (let element of this.command){
             switch(element) {
                 case 'R':
