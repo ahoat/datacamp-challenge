@@ -32,4 +32,16 @@ describe("Robot", function() {
       "0 0 NORTH"
     );
   });
+
+  it("input test #4", () => {
+    const robot = new Robot();
+
+    expect(robot.execute("0 0 NORTH ralralral")).toEqual("3 0 NORTH");
+  });
+
+  it("input test #4", () => {
+    const robot = new Robot();
+
+    expect(robot.execute("0 0 west rrralla")).toEqual("0 0 NORTH");
+  });
 });
